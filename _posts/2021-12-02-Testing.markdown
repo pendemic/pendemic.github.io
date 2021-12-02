@@ -1,0 +1,78 @@
+﻿
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Testing Notes</title>
+</head>
+<body>
+<p><span style="font-weight: 400;">Tried a bit of unit testing today... A little weird and gonna take some getting used to. Anyways here's the notes I took on the different types of testing.
+<p><span style="font-weight: 400;">Two Types of Testing</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Functional Testing</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Unit Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Performed by the developer. It is the process of ensuring individual components of a piece of software are functional and work as they are designed to. Unit testing makes debugging easier because you will find the issues earlier and you&rsquo;ll be able to fix them faster.</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Integration Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Performed after each unit is thoroughly tested, it is integrated with other units that are designed to perform specific tasks or activities. These are then tested as a group through integration testing to ensure it behaves as expected. Framed by user scenarios such as logging into an application or opening files.</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">System Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">A black box testing method used to evaluate the completed and integrated system, as a whole, to ensure it meets requirements. Usually conducted by a separate testing team.</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Acceptance Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Last phase of functional testing and is used to assess whether the software is ready for delivery. It involves ensuring that the product is in compliance with the business criteria and meets the end user&rsquo;s needs. This requires testing internally and externally meaning feedback from end users and testing from QA.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Non-Functional Testing</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Performance Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Used to determine how the application will behave in various conditions</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Goal is to test responsiveness and stability in real user situations.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Load Testing - Putting increasing amounts of simulated demand to verify if it can handle what its designed to handle</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Stress Testing - Used to gauge how your software will respond at or beyond peak load. The goal is to overload the application on purpose until it breaks to find your failure point.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Endurance Testing - Used to analyze the behavior of an application under a specific amount of simulated load over longer periods of time. Goal is to determine how your system will behave under sustained use. Helps uncover memory leaks.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Spike Testing - How your software will respond to large bursts of concurrent user or system activity. Helps you understand what will happen when the load is suddenly increased.</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Security Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Used to determine if the information and data in a system is protected.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Goal is to find loopholes and security risks in the system that could result in unauthorized access or loss of information by probing the application for weaknesses.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Integrity</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Confidentiality</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Authentication</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Authorization</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Availability</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Non-repudiation</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Usability Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Testing method that measures an applications ease of use from the end user perspective and is often performed during system or acceptance testing stages.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Goal is to determine whether the visible design and aesthetics of an application meet the intended workflow.</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Compatibility Testing</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Used to gauge how an application will work in different environments.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Used to check if the product is compatible with multiple operating systems, platforms, browsers or resolution configurations.</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Goal is to ensure functionality is consistently supported across any environment you expect the end user to use.</span></li>
+</ul>
+</body>
+</html>
