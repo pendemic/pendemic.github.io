@@ -98,5 +98,29 @@
 <p><span style="font-weight: 400;">Left child index: 2i + 1</span></p>
 <p><span style="font-weight: 400;">Right child index: 2i + 2</span></p>
 <p><span style="font-weight: 400;">(zero based)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Union Find (Disjoint set)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Union Find is a data structure that keeps track of elements which are split into one or more disjoint sets. It has two primary operations - find and union</span></p>
+<p><span style="font-weight: 400;">Uses</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Kruskal&rsquo;s minimum spanning tree algorithm</span></li>
+</ul>
+<p><span style="font-weight: 400;">Minimum spanning tree is a subset of the edges which connect all vertices in the graph with the minimal total edge cost</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Grid percolation</span></li>
+</ul>
+<p><span style="font-weight: 400;">Finding path from top of grid to bottom or vice versa</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Network connectivity</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Least common ancestor in trees</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Image processing</span></li>
+</ul>
+<p><span style="font-weight: 400;">Operations</span></p>
+<p><span style="font-weight: 400;">Find - To begin using Union Find, first construct a bijection (a mapping) between your objects and the integers in the range [0,n) - Allows us to construct an array based union find</span></p>
+<p><span style="font-weight: 400;">To find which component a particular element belongs to find the root of that component by following the parent nodes until a self loop is reached (a node who&rsquo;s parent is itself)</span></p>
+<p><span style="font-weight: 400;">Unify - To unify two elements find which are the root nodes of each component and if the root nodes are different make one of the root nodes be the parent of the other.</span></p>
+<p><span style="font-weight: 400;">Path Compression</span></p>
+<p><span style="font-weight: 400;">Pointing all nodes and their parent nodes directly to the root node.</span></p>
 </body>
 </html>
