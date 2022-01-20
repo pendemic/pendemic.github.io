@@ -122,5 +122,68 @@
 <p><span style="font-weight: 400;">Unify - To unify two elements find which are the root nodes of each component and if the root nodes are different make one of the root nodes be the parent of the other.</span></p>
 <p><span style="font-weight: 400;">Path Compression</span></p>
 <p><span style="font-weight: 400;">Pointing all nodes and their parent nodes directly to the root node.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">&nbsp;Binary Trees and Binary Search Trees (BST)</span></p>
+<p><span style="font-weight: 400;">A tree is an undirected graph which satisfies any of the following definitions:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">An acyclic connected graph</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">A connected graph with N nodes and N-1 edges</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">A graph in which any two vertices are connected by exactly one path</span></li>
+</ul>
+<p><span style="font-weight: 400;">If we have a rooted tree then we will want to have a reference to the root node of our tree</span></p>
+<p><span style="font-weight: 400;">Child - Is a node extending from another node</span></p>
+<p><span style="font-weight: 400;">Parent - Is the inverse of this</span></p>
+<p><span style="font-weight: 400;">Root node has no parent, parent of the root node is itself</span></p>
+<p><span style="font-weight: 400;">Leaf node - A node with no children</span></p>
+<p><span style="font-weight: 400;">Subtree - A tree entirely contained within another tree - Usually denoted with triangles</span></p>
+<p><span style="font-weight: 400;">Binary Search Tree (BST)&nbsp;</span></p>
+<p><span style="font-weight: 400;">A binary search tree is a binary tree that satisfies the BST invariant: left subtree has smaller elements and right subtree has larger elements.</span></p>
+<p><span style="font-weight: 400;">Uses</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Implementation of some map and set ADTs</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Red Black Trees</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">AVL Trees</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Splay Trees</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Etc.</span></li>
+</ul>
+<p><span style="font-weight: 400;">Used in the implementation of binary heaps</span></p>
+<p><span style="font-weight: 400;">Syntax trees (used by compiler and calculators)</span></p>
+<p><span style="font-weight: 400;">Treap - a probabilistic DS (uses a randomized BST)</span></p>
+<p><span style="font-weight: 400;">Adding elements to a BST</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Recurse down left subtree (&lt; case)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Recurse down right subtree (&gt; case)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Handle finding a duplicate value (= case)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Create a new node (found a null leaf)</span></li>
+</ul>
+<p><span style="font-weight: 400;">Removing elements from a BST</span></p>
+<ol>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Find the element we wish to remove (if it exists) 4 things can happen:</span></li>
+</ol>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">We hit a null node at which point we know the value does not exist within our BST</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Comparator value equal to 0 (found it!)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Comparator value less than 0 (the value, if it exists, is in the left subtree)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Comparator value greater than 0 (the value, if it exists, is in the right subtree)</span></li>
+</ul>
+<ol>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Replace the node we want to remove with its successor (if any) to maintain BST invariant. 4 Cases</span></li>
+</ol>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Node to remove is a leaf node - Just remove node</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Node to remove has a right subtree but no left subtree</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Node to remove has a left subtree but no right subtree</span></li>
+</ul>
+<p><span style="font-weight: 400;">Successor of the node we are removing will be the root node of the left/right subtree</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">Node to remove has both a left subtree and a right subtree</span></li>
+</ul>
+<p><span style="font-weight: 400;">Successor can be largest value in left tree or smallest value in right</span></p>
+<p><span style="font-weight: 400;">Tree Traversals</span></p>
+<p><span style="font-weight: 400;">Preorder - Preorder prints before the recursive calls</span></p>
+<p><span style="font-weight: 400;">Inorder - Inorder prints between the recursive calls - prints values increasing inorder</span></p>
+<p><span style="font-weight: 400;">Postorder - Postorder prints after the recursive calls</span></p>
+<p><span style="font-weight: 400;">Level order - Print the nodes as they appear one layer at a time</span></p>
+<p><span style="font-weight: 400;">To obtain this ordering we want to do a Breadth First Search (BFS) from the root node down to the leaf nodes</span></p>
 </body>
 </html>
