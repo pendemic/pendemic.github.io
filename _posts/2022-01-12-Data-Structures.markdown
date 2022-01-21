@@ -185,5 +185,22 @@
 <p><span style="font-weight: 400;">Postorder - Postorder prints after the recursive calls</span></p>
 <p><span style="font-weight: 400;">Level order - Print the nodes as they appear one layer at a time</span></p>
 <p><span style="font-weight: 400;">To obtain this ordering we want to do a Breadth First Search (BFS) from the root node down to the leaf nodes</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Hash Tables</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">A Hash table (HT) is a data structure that provides a mapping from keys to values using a technique called hashing. Key-Value pairs keys must be unique but values can be repeated.</span></p>
+<p><span style="font-weight: 400;">HT are often used to track item frequencies.</span></p>
+<p><span style="font-weight: 400;">The key-value pairs you can place in a HT can be of any type not just strings and numbers but also objects</span></p>
+<p><span style="font-weight: 400;">Hash function H(x) - function that maps a key &lsquo;x&rsquo; to a whole number in a fixed range. indexes to array</span></p>
+<p><span style="font-weight: 400;">We can also define hash functions for arbitrary objects such as strings, lists, tuples, multi data objects, etc</span></p>
+<p><span style="font-weight: 400;">Hash collision - Is when two objects x,y hash to the same value (H(x) = H(y))</span></p>
+<p><span style="font-weight: 400;">To solve this use separate chaining and open addressing</span></p>
+<p><span style="font-weight: 400;">Separate chaining - deals with hash collisions by maintaining a data structure (usually a linked list) to hold all the different values which hashed to a particular value.</span></p>
+<p><span style="font-weight: 400;">Each position of array is a linked list.</span></p>
+<p><span style="font-weight: 400;">Open addressing - deals with hash collisions by finding another place within the hash table for the object to go by offsetting it from the position to which it hashed to.</span></p>
+<p><span style="font-weight: 400;">Key value pairs are stored in the table itself as opposed to a data structure</span></p>
+<p><span style="font-weight: 400;">Uses a probing sequence to find next unoccupied slot</span></p>
+<p><span style="font-weight: 400;">Probing Sequences - Linear, Quadratic, Double Hashing, Pseudo random number generator</span></p>
+<p><span style="font-weight: 400;">Can be caught in an infinite loop fix by creating probing functions that don&rsquo;t produce cycles.</span></p>
 </body>
 </html>
