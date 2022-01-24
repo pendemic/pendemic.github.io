@@ -202,5 +202,31 @@
 <p><span style="font-weight: 400;">Uses a probing sequence to find next unoccupied slot</span></p>
 <p><span style="font-weight: 400;">Probing Sequences - Linear, Quadratic, Double Hashing, Pseudo random number generator</span></p>
 <p><span style="font-weight: 400;">Can be caught in an infinite loop fix by creating probing functions that don&rsquo;t produce cycles.</span></p>
+<p><span style="font-weight: 400;">Linear Probing(LP)</span></p>
+<p><span style="font-weight: 400;">A probing method which probes according to a linear formula</span></p>
+<p><span style="font-weight: 400;">P(x) = ax + b where a != 0, b are constants</span></p>
+<p><span style="font-weight: 400;">To produce a full cycle a and modulo N must be relatively prime</span></p>
+<p><span style="font-weight: 400;">Relatively prime - Greatest common denominator is equal to 1</span></p>
+<p><span style="font-weight: 400;">Quadratic Probing (QP)</span></p>
+<p><span style="font-weight: 400;">A probing method which probes according to a quadratic formula</span></p>
+<p><span style="font-weight: 400;">P(x) = ax^2 + bx + c where a,b,c are constants and a != 0 (otherwise we have linear probing)</span></p>
+<p><span style="font-weight: 400;">Randomly selected QP functions have the issue that they easily produce short cycles.</span></p>
+<p><span style="font-weight: 400;">Full Cycle popular approaches</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400;">P(x) = x^2, keep table size a prime number &gt; 3 and also keep load factor &lt;= &frac12;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">P(x) = (x^2 + x)/2 and keep the table size a power of two</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400;">P(x) = (-1^x)*x^2 and keep the table size a prime N where N = 3 mod 4</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Double Hashing (DH)</span></p>
+<p><span style="font-weight: 400;">Is a probing method which probes according to a constant multiple of another hash function</span></p>
+<p><span style="font-weight: 400;">P(k,x) = x*H2(k), where H2(k) is a second hash function&rsquo;</span></p>
+<p><span style="font-weight: 400;">H2(k) must hash the same type of keys as H1(k)</span></p>
+<p><span style="font-weight: 400;">Since DH reduces to linear probing at runtime we may end up with a linear probing function that causes a infinite cycle</span></p>
+<p><span style="font-weight: 400;">To fix the issue of cycles pick the table size to be a prime number and also compute the value of delta. If delta = 0 you are guaranteed to be stuck in a cycle. If this happens set delta = 1</span></p>
+<p><span style="font-weight: 400;">To resize table with DH double the table size then find the next prime number above it</span></p>
+<p><span style="font-weight: 400;">Removing from open addressing</span></p>
+<p><span style="font-weight: 400;">Tombstones - Count as a filled slot after removing a key so that the search doesn&rsquo;t stop with a null value.</span></p>
+<p><span style="font-weight: 400;">Lazy deletion - An optimization we can do is replace key with earliest tombstone we encountered next time the key is looked up it will be much faster.</span></p>
 </body>
 </html>
