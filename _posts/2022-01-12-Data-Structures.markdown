@@ -228,5 +228,27 @@
 <p><span style="font-weight: 400;">Removing from open addressing</span></p>
 <p><span style="font-weight: 400;">Tombstones - Count as a filled slot after removing a key so that the search doesn&rsquo;t stop with a null value.</span></p>
 <p><span style="font-weight: 400;">Lazy deletion - An optimization we can do is replace key with earliest tombstone we encountered next time the key is looked up it will be much faster.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Fenwick Tree (Binary Indexed Tree)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">A Fenwick Tree is a data structure that supports sum range queries as well as setting values in a static array and getting the value of the prefix sum up some index efficiently.</span></p>
+<p><span style="font-weight: 400;">Unlike a regular array, in a Fenwick tree a specific cell is responsible for other cells as well.</span></p>
+<p><span style="font-weight: 400;">The position of the least significant bit (LSB) determines the range of responsibility that cell has to the cells below itself.</span></p>
+<p><span style="font-weight: 400;">All odd cells have their LSB in the first position so they are only responsible for themselves</span></p>
+<p><span style="font-weight: 400;">1 based</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Suffix Array</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">A suffix is a substring at the end of a string of characters.</span></p>
+<p><span style="font-weight: 400;">A suffix array is an array which contains all the sorted suffixes of a string</span></p>
+<p><span style="font-weight: 400;">The actual suffix array is the array of sorted indices - lexicographically</span></p>
+<p><span style="font-weight: 400;">The suffix array provides a space efficient alternative to a suffix tree which itself is a compressed version of a trie.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">The Longest Common Prefix array (LCP)</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">Example: Find the LCP array of the string &lsquo;ABABBAB&rsquo;</span></p>
+<p><span style="font-weight: 400;">Begin by constructing the suffix array</span></p>
+<p><span style="font-weight: 400;">The LCP array is an array in which every index tracks how many characters two sorted adjacent suffixes have in common</span></p>
+<p><span style="font-weight: 400;">LCP[0] is undefined but it is fine to set to 0</span></p>
 </body>
 </html>
