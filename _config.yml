@@ -27,6 +27,7 @@ github_username:  pendemic
 
 # Build settings
 theme: minima
+include: [".well-known"]
 plugins:
   - jekyll-feed
 
